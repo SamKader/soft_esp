@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons8-power-off.png</file>
+    <file>icons8-power-on.png</file>
+    <file>back-up (1).svg</file>
+    <file>delete-off.svg</file>
+    <file>display-arrow-down.svg</file>
+    <file>icons8-edit-24.svg</file>
+  </qresource>
+</RCC>

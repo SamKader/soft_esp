@@ -456,27 +456,19 @@ background-color: rgb(107, 107, 107);
                     <number>0</number>
                    </property>
                    <item>
-                    <widget class="QLabel" name="label_2">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
+                    <widget class="QTextEdit" name="log_text">
                      <property name="styleSheet">
-                      <string notr="true">QLabel {
-	
-	background-color: rgb(34, 34, 34);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px solid #000; /* Bordure noire */
-    border-radius: 10px; /* Coins arrondis */
-    /*background-color: #f0f0f0; /* Couleur de fond si l'image est transparente */
-}
+                      <string notr="true">
+    QTextEdit {
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+        font-family: Consolas, monospace;
+        font-size: 10pt;
+        border: 1px solid #3c3c3c;
+        border-radius: 4px;
+        padding: 5px;
+    }
 </string>
-                     </property>
-                     <property name="text">
-                      <string/>
                      </property>
                     </widget>
                    </item>

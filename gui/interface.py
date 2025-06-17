@@ -19,8 +19,8 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
 from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QHeaderView,
     QLabel, QMainWindow, QMenu, QMenuBar,
     QPushButton, QSizePolicy, QStatusBar, QTableWidget,
-    QTableWidgetItem, QVBoxLayout, QWidget)
-import icons_rc
+    QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget)
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -256,22 +256,10 @@ class Ui_MainWindow(object):
         self.verticalLayout_7 = QVBoxLayout(self.widget_15)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
         self.verticalLayout_7.setContentsMargins(0, 0, 0, 0)
-        self.label_2 = QLabel(self.widget_15)
-        self.label_2.setObjectName(u"label_2")
-        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
-        self.label_2.setSizePolicy(sizePolicy)
-        self.label_2.setStyleSheet(u"QLabel {\n"
-"	\n"
-"	background-color: rgb(34, 34, 34);\n"
-"    background-repeat: no-repeat;\n"
-"    background-position: center;\n"
-"    border: 2px solid #000; /* Bordure noire */\n"
-"    border-radius: 10px; /* Coins arrondis */\n"
-"    /*background-color: #f0f0f0; /* Couleur de fond si l'image est transparente */\n"
-"}\n"
-"")
+        self.log_text = QTextEdit(self.widget_15)
+        self.log_text.setObjectName(u"log_text")
 
-        self.verticalLayout_7.addWidget(self.label_2)
+        self.verticalLayout_7.addWidget(self.log_text)
 
 
         self.verticalLayout_4.addWidget(self.widget_15)
@@ -499,7 +487,6 @@ class Ui_MainWindow(object):
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Nombre de salle connect\u00e9e:", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"1", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Journal des evenements", None))
-        self.label_2.setText("")
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"id", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
